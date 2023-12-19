@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+
+{% block titulo %} Inicio {% endblock  %}
+
+{% block contenido %} 
+<style>
+    body {
+        background-color: #f0f0f0; /* Color de fondo del cuerpo de la página */
+        margin-bottom: 150px; /* Espacio para el footer */
+    }
+
+    .contact-section {
+        background-color: #e0e0e0; /* Color de fondo de la sección de contacto */
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+
+    .footer {
+        background-color: #333; /* Color de fondo del footer */
+        color: #fff; /* Color del texto del footer */
+        padding: 20px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        text-align: left; /* Alinea el texto a la izquierda en el footer */
+    }
+
+    .map-container {
+        float: right; /* Hace que el mapa se sitúe a la derecha */
+    }
+</style>
+
+<div class="p-5 bg-light">
+    <div class="container">
+        <h1 class="display-3">Bienvenidos a mi librería web</h1>
+        <p class="lead">Empezar a ingresar libros</p>
+        <hr class="my-2">
+        <p class="lead">
+            
+        </p>
+    </div>
+</div>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-GLhlTQ8iS6F7fYR5Ztw3vWg4+OgK/P7PAFIIrdeo3SO+hSzkbe5P/SFIIJdA2xG" crossorigin="anonymous">
+
+<div class="container mt-4 contact-section">
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Contáctanos</h2>
+            <p>
+                ¿Tienes preguntas o sugerencias? ¡No dudes en ponerte en contacto con nosotros!
+            </p>
+            <ul>
+                <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:(+51) 422-5307">(+51) 422-5307</a></li>
+                <li><a href="https://wa.me/51978962667" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i>(+51) 978962667</a></li>
+                <li><a href="mailto:libreriasur@sanseviero.pe" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i>libreriasur@sanseviero.pe</a></li>
+                <li><a href="/contacto"><i class="fa fa-comment" aria-hidden="true"></i>Formulario de contacto</a></li>
+            </ul>
+        </div>
+        <div class="col-md-6 map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31208.592764835696!2d-77.038525!3d-12.10708!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c840b7f76b3b%3A0xa3ad9b0c79ce86d5!2sLIBRER%C3%8DA%20SUR!5e0!3m2!1ses!2spe!4v1702944231441!5m2!1ses!2spe" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2023 Mi Librería</p>
+        <!-- Otros elementos del footer aquí -->
+    </div>
+</footer>
+
+{% endblock  %}
